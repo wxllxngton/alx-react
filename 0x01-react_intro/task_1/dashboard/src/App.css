@@ -18,12 +18,6 @@
     margin: 50px;
 }
 
-.login-form {
-    display: flex;
-    flex-direction: row;
-    padding: 0rem 0.3125rem;
-}
-
 .App-footer {
     border-top: 3px solid var(--main-color);
     width: 100%;
