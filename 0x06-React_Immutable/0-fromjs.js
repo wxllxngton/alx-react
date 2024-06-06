@@ -7,5 +7,5 @@ import { fromJS } from './node_modules/immutable/dist/immutable.js';
  * @returns {Immutable.Map} An immutable Map representation of the input object.
  */
 export default function getImmutableObject (object) {
-  return fromJS(object);
+    return fromJS(object);
 }
