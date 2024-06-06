@@ -1,4 +1,4 @@
-import { Map } from './node_modules/immutable/dist/immutable.js';
+import { fromJS } from './node_modules/immutable/dist/immutable.js';
 
 /**
  * Returns the value of the object at the defined path.
@@ -9,7 +9,10 @@ import { Map } from './node_modules/immutable/dist/immutable.js';
  * or undefined if the path does not exist.
  */
 export default function accessImmutableObject(object, array) {
-    const mapObj = Map(object);
+    const mapObj = fromJS(object);
 
-    return mapObj.getIn(array);
+    return mapObj.getIn(
+        array,
+        undefined
+    );
 }
